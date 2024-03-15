@@ -363,6 +363,7 @@ header {
   transform: scale(1.05);
   /* transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1); */
   box-shadow: inset 5px 5px 8px #262525;
+  transform: translateY(-0.5rem);
 }
 .services-box i {
   font-size: 1.4rem;
