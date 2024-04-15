@@ -26,4 +26,3 @@ jobs:
         versal_token: ${{ secrets.VERSAL_TOKEN }}
         project_id: prj_cuhcYNkFQJenIdn46FZoAeTlZoeK
         source_path: https://pp-website-beta.vercel.app/
-        source_path: ./_site # Specify the directory where your built site is located
