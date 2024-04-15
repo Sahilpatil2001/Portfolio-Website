@@ -1,0 +1,28 @@
+name: CI/CD for Static Website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build website
+      run: |
+        # Add commands to build your static website
+        # For example, if you're using a static site generator like Jekyll:
+        # bundle install
+        # bundle exec jekyll build
+
+    - name: Deploy to Versal
+      uses: dsaltares/versal-action@v1
+      with:
+        versal_token: ${{ secrets.VERSAL_TOKEN }}
+        project_id: your_project_id
+        source_path: ./_site # Specify the directory where your built site is located
