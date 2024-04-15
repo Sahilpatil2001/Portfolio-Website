@@ -24,5 +24,5 @@ jobs:
       uses: dsaltares/versal-action@v1
       with:
         versal_token: ${{ secrets.VERSAL_TOKEN }}
-        project_id: your_project_id
+        project_id: prj_cuhcYNkFQJenIdn46FZoAeTlZoeK
         source_path: ./_site # Specify the directory where your built site is located
